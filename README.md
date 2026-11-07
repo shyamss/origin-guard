@@ -46,6 +46,12 @@ The full working paper is available as
 [Markdown](docs/origin-or-policy.md) and
 [PDF](docs/origin-or-policy.pdf).
 
+Rebuild the PDF with Pandoc and WeasyPrint:
+
+```bash
+./scripts/build_paper.sh
+```
+
 The completed pilot combines factual provenance and normative policy labels, so
 it cannot attribute the effect. Direct 2026 prior work also prevents positioning
 this as a new provenance defense. The revised study is a 2×2 ablation: neither

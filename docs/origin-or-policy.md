@@ -178,7 +178,7 @@ conditions have not been executed.
 The case manifest was frozen on 2026-11-07 before treatment outputs were
 inspected. It contained:
 
-- five targets: three authorization-confusion cases, two agent-authored handoff
+- five targets: two authorization-confusion cases, two agent-authored handoff
   cases, and one multi-session symlink case;
 - two secondary file/object-reuse cases; and
 - four negative controls from counting, model-prior, and plausible-naming

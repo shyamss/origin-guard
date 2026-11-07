@@ -1,0 +1,181 @@
+@page {
+  size: A4;
+  margin: 17mm 16mm 18mm;
+
+  @bottom-center {
+    content: counter(page);
+    color: #6b7280;
+    font: 8pt "Liberation Sans", Arial, sans-serif;
+  }
+}
+
+html {
+  font-size: 10pt;
+}
+
+body {
+  max-width: none;
+  margin: 0;
+  color: #20252d;
+  font-family: "Liberation Serif", Georgia, serif;
+  line-height: 1.38;
+  hyphens: auto;
+}
+
+h1,
+h2,
+h3 {
+  break-after: avoid;
+  color: #285f9f;
+  font-family: "Liberation Sans", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.18;
+}
+
+h1 {
+  margin: 0 0 4mm;
+  color: #17213a;
+  font-size: 21pt;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 5mm 0 2.2mm;
+  padding-bottom: 1mm;
+  border-bottom: 0.35pt solid #cbd8e8;
+  font-size: 14.5pt;
+}
+
+h3 {
+  margin: 3.8mm 0 1.5mm;
+  font-size: 11.5pt;
+}
+
+h2[id="6-results"] {
+  break-before: page;
+}
+
+p {
+  margin: 0 0 2.2mm;
+  orphans: 3;
+  widows: 3;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: #245b9b;
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 2.5mm 7mm 3mm;
+  padding: 1.5mm 0 1.5mm 4mm;
+  border-left: 2pt solid #6f96c4;
+  color: #39495f;
+  font-style: italic;
+}
+
+ul,
+ol {
+  margin: 1.2mm 0 2.5mm;
+  padding-left: 6mm;
+}
+
+li {
+  margin-bottom: 0.8mm;
+}
+
+code {
+  font-family: "Liberation Mono", "Courier New", monospace;
+  font-size: 0.88em;
+  hyphens: none;
+}
+
+p > code,
+li > code {
+  padding: 0.2mm 0.7mm;
+  border-radius: 1mm;
+  background: #eef2f6;
+}
+
+pre {
+  margin: 2.5mm 0 3mm;
+  padding: 3mm;
+  break-inside: avoid;
+  border: 0.5pt solid #ccd5df;
+  border-radius: 1.5mm;
+  background: #f6f8fa;
+  line-height: 1.3;
+  white-space: pre-wrap;
+}
+
+table {
+  width: 100%;
+  margin: 2.5mm 0 4mm;
+  border-collapse: collapse;
+  font-family: "Liberation Sans", Arial, sans-serif;
+  font-size: 7.4pt;
+  line-height: 1.23;
+}
+
+thead {
+  display: table-header-group;
+}
+
+tr {
+  break-inside: avoid;
+}
+
+th,
+td {
+  padding: 1.2mm 1.4mm;
+  border-bottom: 0.35pt solid #d7dee8;
+  vertical-align: top;
+}
+
+th {
+  background: #eaf0f7;
+  color: #17213a;
+  font-weight: 600;
+  text-align: left;
+}
+
+th[style*="text-align: right"],
+td[style*="text-align: right"] {
+  text-align: right;
+}
+
+figure {
+  margin: 3mm 0 4mm;
+  break-inside: avoid;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 78mm;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+figcaption {
+  margin-top: 1.5mm;
+  color: #5a6573;
+  font: 8.2pt/1.3 "Liberation Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  border-top: 0.5pt solid #cbd5e1;
+}
+
+@media print {
+  a[href^="http"]::after {
+    content: "";
+  }
+}
