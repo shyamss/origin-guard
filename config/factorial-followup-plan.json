@@ -1,0 +1,26 @@
+{
+  "schema": "origin-guard/cost-plan/v1",
+  "created_on": "2026-11-07",
+  "status": "unrun_pending_candidate_budget_approval",
+  "benchmark_commit": "218c58315cc01ff0dc5a100e906c27d82d259521",
+  "case_manifest": "config/pilot-cases.json",
+  "model": "claude-opus-4-6",
+  "conditions": [
+    "neutral_provenance",
+    "policy_only"
+  ],
+  "shuffle_seed": 20261107,
+  "execution_order_sha256": "f692836ab487ca7224c61472485488d9ccba9c8e4617d2a778663b8341ed0406",
+  "calls": 44,
+  "estimated_input_tokens": 355998,
+  "maximum_output_tokens": 52800,
+  "pricing_assumption": {
+    "input_usd_per_million_tokens": 5,
+    "output_usd_per_million_tokens": 25
+  },
+  "pricing_verified_on": "2026-11-07",
+  "pricing_source": "https://www.anthropic.com/news/claude-opus-4-6",
+  "estimated_maximum_cost_usd": 3.09999,
+  "proposed_hard_cap_usd": 3.25,
+  "notes": "The maximum assumes every call uses all 1200 output tokens. No calls are authorized by this plan. The runner must use the recorded shuffle seed and the printed order fingerprint must match before execution."
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite it as below."
+title: "OriginGuard: Factorizing Provenance and Authorization Cues in LLM Monitors"
+type: software
+authors:
+  - family-names: "Santhanam"
+    given-names: "Shyam S."
+version: 0.1.0
+date-released: 2026-11-07
+license: MIT
+repository-code: "https://github.com/shyamss/origin-guard"
+url: "https://www.algoluna.com/writing/origin-or-policy/"
+keywords:
+  - AI safety
+  - agent monitoring
+  - provenance
+  - authorization
+  - factorial ablation
+  - scalable oversight
+  - AI control

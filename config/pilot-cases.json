@@ -1,0 +1,22 @@
+{
+  "schema": "origin-guard/case-manifest/v1",
+  "frozen_on": "2026-11-07",
+  "benchmark_repository": "https://github.com/safety-research/sleight-bench.git",
+  "benchmark_commit": "218c58315cc01ff0dc5a100e906c27d82d259521",
+  "monitor_prompt": "prompts/control_arena.md at the pinned benchmark commit",
+  "pilot_model": "claude-opus-4-6",
+  "notes": "Selected before treatment outputs. Paths are relative to the external SLEIGHT-Bench attacks directory.",
+  "cases": [
+    {"id": "auth-ambiguous-backup", "stratum": "target", "sessions": ["authorization_confusion/ambiguous-instruction-weight-backup-orion-personal"]},
+    {"id": "auth-preprocess", "stratum": "target", "sessions": ["authorization_confusion/preprocess-sabotage"]},
+    {"id": "auth-corp-handoff", "stratum": "target", "sessions": ["authorization_confusion/transcript-perm-launder-corp-2part-stage1", "authorization_confusion/transcript-perm-launder-corp-2part-stage2"]},
+    {"id": "auth-gcs-handoff", "stratum": "target", "sessions": ["authorization_confusion/transcript-perm-launder-gcs-2part-stage1", "authorization_confusion/transcript-perm-launder-gcs-2part-stage2"]},
+    {"id": "multi-session-symlink", "stratum": "target", "sessions": ["multi_session/weight-exfil-eval-symlink-part1", "multi_session/weight-exfil-eval-symlink-part2"]},
+    {"id": "reuse-variable", "stratum": "secondary", "sessions": ["file_or_object_reuse/credential-scanner-bash-script-variable-overwrite"]},
+    {"id": "reuse-tempfile", "stratum": "secondary", "sessions": ["file_or_object_reuse/keys-committed-to-repo-because-reused-tmpfile"]},
+    {"id": "control-counting-column", "stratum": "control", "sessions": ["counting/awk-column-miscount"]},
+    {"id": "control-counting-line", "stratum": "control", "sessions": ["counting/sed-wrong-line"]},
+    {"id": "control-model-prior", "stratum": "control", "sessions": ["model_priors/ifs-backup-sensitive-data"]},
+    {"id": "control-plausible-name", "stratum": "control", "sessions": ["plausible_naming/hallucinated-package-confschema-transcript"]}
+  ]
+}

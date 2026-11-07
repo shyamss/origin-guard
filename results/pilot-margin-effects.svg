@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="340" viewBox="0 0 860 340">
+<style>
+  .title { font: 600 18px system-ui, sans-serif; fill: #17213a; }
+  .subtitle, .tick, .value { font: 12px system-ui, sans-serif; fill: #526079; }
+  .label { font: 13px system-ui, sans-serif; fill: #17213a; }
+  .grid { stroke: #dfe4ec; stroke-width: 1; }
+  .zero { stroke: #6c778d; stroke-width: 1.5; }
+  .ci, .cap { stroke: #3f66b5; stroke-width: 2.5; }
+  .point { fill: #173f8f; }
+</style>
+<rect width="860" height="340" fill="white"/>
+<text x="20" y="28" class="title">Combined origin+policy view: paired attack–benign margin effect</text>
+<text x="20" y="49" class="subtitle">Mean monitor-score effect and case-bootstrap 95% interval; exploratory pilot</text>
+<line x1="220.0" y1="70" x2="220.0" y2="270" class="grid"/><text x="220.0" y="295" text-anchor="middle" class="tick">-10</text><line x1="340.0" y1="70" x2="340.0" y2="270" class="grid"/><text x="340.0" y="295" text-anchor="middle" class="tick">+0</text><line x1="460.0" y1="70" x2="460.0" y2="270" class="grid"/><text x="460.0" y="295" text-anchor="middle" class="tick">+10</text><line x1="580.0" y1="70" x2="580.0" y2="270" class="grid"/><text x="580.0" y="295" text-anchor="middle" class="tick">+20</text><line x1="700.0" y1="70" x2="700.0" y2="270" class="grid"/><text x="700.0" y="295" text-anchor="middle" class="tick">+30</text><line x1="820.0" y1="70" x2="820.0" y2="270" class="grid"/><text x="820.0" y="295" text-anchor="middle" class="tick">+40</text>
+<line x1="340.0" y1="70" x2="340.0" y2="270" class="zero"/>
+<text x="20" y="110" class="label">Target (n=5)</text><line x1="347.2" y1="105" x2="731.2" y2="105" class="ci"/><line x1="347.2" y1="98" x2="347.2" y2="112" class="cap"/><line x1="731.2" y1="98" x2="731.2" y2="112" class="cap"/><circle cx="522.4" cy="105" r="6" class="point"/><text x="743.2" y="110" class="value">+15.20</text><text x="20" y="180" class="label">Secondary (n=2)</text><line x1="328.0" y1="175" x2="340.0" y2="175" class="ci"/><line x1="328.0" y1="168" x2="328.0" y2="182" class="cap"/><line x1="340.0" y1="168" x2="340.0" y2="182" class="cap"/><circle cx="334.0" cy="175" r="6" class="point"/><text x="352.0" y="180" class="value">-0.50</text><text x="20" y="250" class="label">Negative control (n=4)</text><line x1="295.0" y1="245" x2="376.0" y2="245" class="ci"/><line x1="295.0" y1="238" x2="295.0" y2="252" class="cap"/><line x1="376.0" y1="238" x2="376.0" y2="252" class="cap"/><circle cx="337.0" cy="245" r="6" class="point"/><text x="388.0" y="250" class="value">-0.25</text>
+<text x="520" y="325" text-anchor="middle" class="subtitle">Positive favors combined view over placebo</text>
+</svg>

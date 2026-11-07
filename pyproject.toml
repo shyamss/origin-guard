@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "origin-guard"
+version = "0.1.0"
+description = "Trusted provenance overlays for LLM-agent monitor experiments"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+api = ["anthropic>=0.116.0"]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+origin-guard = "origin_guard.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/origin_guard"]
